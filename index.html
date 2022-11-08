@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Autogenerator</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/show-password.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!--Password Genarate-->
+    <div class="content">
+        <h2>Password Autogenerator</h2>
+        <p>Here you can make strong & Authentic password easily</p>
+    </div>
+    <div class="center-form">
+        <div class="form-contaienr">
+            <div class="pass-container">
+                <input type="password" placeholder="Password" id="inputText">
+                <div class="eyes-container" onclick="showPassword()">
+                    <ion-icon class="eye" name="eye-off-outline"></ion-icon>
+                    <ion-icon class="eye" name="eye-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div style="display: flex;" class="auto-container">
+                <button onclick="autoGenarate()" id="auto-btn">
+                    <ion-icon name="key-outline"></ion-icon> Autogenerate Secure Password
+                </button>
+                <button onclick="copypassword()" id="btn-copy" style="margin-left: 10px;" disabled>
+                    <ion-icon name="copy-outline"></ion-icon> Copy
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyMess">
+        <button onclick="popupClose()" class="popup-close">X</button>
+        <figure>
+            <img width="50%" src="images/giphy.gif" alt="">
+            <figcaption>Successfully Copied!</figcaption>
+        </figure>
+    </div>
+
+    <footer>
+        <p>Design and Developed By <a href="https://github.com/siffahim" style="color: #838080;"
+                target="_blank">Fahim</a></p>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
