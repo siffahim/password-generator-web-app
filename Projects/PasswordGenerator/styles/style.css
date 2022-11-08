@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    user-select: none;
+}
+
+body {
+    background: #1B1464;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    overflow-x: hidden;
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.content>h2 {
+    font-size: 3em;
+    letter-spacing: 4px;
+}
+
+.content>p {
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.center-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-contaienr {
+    width: 300px;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    border-radius: 8px;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: #676b70;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+input::selection {
+    user-select: none;
+}
+
+.pass-container {
+    width: 91%;
+    height: 30px;
+    border: 1px solid rgb(112, 107, 107);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.pass-container>input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.eye[name=eye-outline] {
+    display: none;
+}
+
+.actived .eye[name=eye-outline] {
+    display: block;
+}
+
+.actived .eye[name=eye-off-outline] {
+    display: none;
+}
+
+#auto-btn {
+    cursor: pointer;
+}
+
+#btn-copy {
+    background: #abadab;
+    cursor: not-allowed;
+}
+
+.copyMess {
+    width: 100%;
+    height: 100vh;
+    background: #6169f1;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: -100%;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: 3px;
+    font-size: 2em;
+
+    transition: 0.3s linear;
+}
+
+.popup-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #252930;
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    text-align: center;
+    color: #838080;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+
+    letter-spacing: 2px;
+}
