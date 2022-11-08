@@ -82,6 +82,10 @@ input::selection {
     background: transparent;
 }
 
+.eyes-container {
+    cursor: pointer;
+}
+
 .eye[name=eye-outline] {
     display: none;
 }
